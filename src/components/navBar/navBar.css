@@ -1,0 +1,48 @@
+/* Basic styling for the navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Unordered list styling */
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+/* List items styling */
+.nav-links li {
+    display: inline; /* Display links in a line */
+    margin-right: 20px;
+}
+
+/* Link styling */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0; /* Lighten the color on hover */
+}
+
+@media (max-width: 768px) {
+    .nav-links li {
+        display: block; /* Stack links vertically */
+        margin-right: 0; /* Remove right margin */
+        text-align: center; /* Center-align the text */
+    }
+
+    .nav-links a {
+        display: block; /* Make links block to fill the horizontal space */
+        padding: 15px; /* Increase padding for easier tapping */
+    }
+
+    /* Adjust navbar padding on smaller screens */
+    .navbar {
+        padding: 10px 0;
+    }
+}
